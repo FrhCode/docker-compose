@@ -12,7 +12,7 @@ This repository contains a Docker Compose configuration for setting up PostgreSQ
 1. **Clone this repository:**
 
    ```bash
-   git clone https://github.com/FrhCode/docker-compose cd docker-compose
+   git clone https://github.com/FrhCode/docker-compose && cd docker-compose
    ```
 
 2. **Adjust the configuration (if needed):**
