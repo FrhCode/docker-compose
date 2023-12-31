@@ -1,0 +1,25 @@
+version: "3.5"
+services:
+  postgres:
+    container_name: postgres-14
+    image: postgres:14.1
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_HOST_AUTH_METHOD=trust
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_USER=postgres
+    hostname: postgres
+  pgadmin:
+    container_name: pgadmin4
+    image: dpage/pgadmin4
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    environment:
+      - POSTGRES_HOST_AUTH_METHOD=trust
+      - PGADMIN_DEFAULT_EMAIL=user@domain.com
+      - PGADMIN_DEFAULT_PASSWORD=admin
+    hostname: pgadmin
+# docker-compose -p postgres -f docker-compose-postgres.yml up -d --buildS
