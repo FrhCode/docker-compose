@@ -34,6 +34,36 @@ This repository contains a Docker Compose configuration for setting up PostgreSQ
 
    Use pgAdmin to connect to the PostgreSQL database using the provided credentials.
 
+## Default Environtment
+
+- **PgAdmin Service (pgadmin)**
+
+  - Email
+
+    ```bash
+    user@domain.com
+    ```
+
+  - Password
+
+    ```bash
+    admin
+    ```
+
+- **PostgreSQL Service (postgres)**
+
+  - User
+
+    ```bash
+    postgres
+    ```
+
+  - Password
+
+    ```bash
+    root
+    ```
+
 ## Environment Variables
 
 - **PostgreSQL Service (postgres)**

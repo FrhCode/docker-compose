@@ -10,7 +10,6 @@ services:
       - POSTGRES_HOST_AUTH_METHOD=trust
       - POSTGRES_PASSWORD=root
       - POSTGRES_USER=postgres
-    hostname: postgres
   pgadmin:
     container_name: pgadmin4
     image: dpage/pgadmin4
@@ -21,5 +20,4 @@ services:
       - POSTGRES_HOST_AUTH_METHOD=trust
       - PGADMIN_DEFAULT_EMAIL=user@domain.com
       - PGADMIN_DEFAULT_PASSWORD=admin
-    hostname: pgadmin
 # docker-compose -p postgres -f docker-compose-postgres.yml up -d --buildS
