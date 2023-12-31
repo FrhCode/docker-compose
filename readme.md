@@ -4,4 +4,4 @@ Welcome to the Docker Compose Repository! This repository serves as a collection
 
 ## Table of Contents
 
-- [PostgreSQL and pgAdmin](#postgresql-and-pgadmin)
+- [PostgreSQL and pgAdmin](https://github.com/FrhCode/docker-compose/blob/main/docker-compose-postgres.md)
