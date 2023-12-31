@@ -22,13 +22,13 @@ The Docker Compose file (`docker-compose-postgres.yml`) in this section sets up 
 To start the services, run the following command:
 
 ```bash
-docker-compose -f docker-compose-postgres.yml up -d
+docker-compose -p postgres -f docker-compose-postgres.yml up -d
 ```
 
 To build the images and start the services:
 
 ```bash
-docker-compose -f docker-compose-postgres.yml up -d --build
+docker-compose -p postgres -f docker-compose-postgres.yml up -d --build
 ```
 
 #### PostgreSQL
